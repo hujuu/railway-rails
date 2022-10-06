@@ -32,3 +32,8 @@ This is a [Ruby on Rails](https://rubyonrails.org/) starter app that connects to
 
 This app was generated with the `rails new` command. Read more about Rails on
 their [official website](https://rubyonrails.org/)
+
+railwayでは、デフォルトのenvironmentはdevelopmentになっている。
+`config/environments/development.rb`へデプロイ先のURLを以下のように追記すると、エラーが解消される。
+
+`config.hosts << "rails-production-xxxx.up.railway.app"`
